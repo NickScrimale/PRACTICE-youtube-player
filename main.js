@@ -167,7 +167,8 @@ const eventListeners = () => {
   // BUTTONS ON CARDS
   document.querySelector('#cardContainer').addEventListener('click', (e) => {
     // check to make sure e.target.id is not empty
-    if (e.target.id) {
+    if (e.target.id === "clear") {
+      cardsOnDom(data);
       // get the video ID off the button ID
       // find the index of the object in the array
 
